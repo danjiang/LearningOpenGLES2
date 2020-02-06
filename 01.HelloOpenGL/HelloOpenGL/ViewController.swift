@@ -16,18 +16,15 @@ class ViewController: GLKViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        glkView = self.view as! GLKView
+        glkView = self.view as? GLKView
+        // 指定 OpenGL ES 版本来初始化 OpenGL Context
         glkView.context = EAGLContext(api: .openGLES2)!
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
     
     override func glkView(_ view: GLKView, drawIn rect: CGRect) {
+        // 设置 clear 的颜色
         glClearColor(1.0, 0.0, 0.0, 1.0)
-        
-        // GLbitfield is typealias of UInt32
+        // clear color buffer，当然还有其他 buffer
         glClear(GLbitfield(GL_COLOR_BUFFER_BIT))
     }
 
