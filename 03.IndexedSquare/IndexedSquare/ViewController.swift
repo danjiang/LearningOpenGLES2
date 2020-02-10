@@ -74,6 +74,7 @@ class ViewController: GLKViewController {
         
         glBindBuffer(GLenum(GL_ARRAY_BUFFER), vertexBuffer)
         glBindBuffer(GLenum(GL_ELEMENT_ARRAY_BUFFER), indexBuffer)
+        // 根据 indices 拆分出三角形需要的 vertices
         glDrawElements(GLenum(GL_TRIANGLES), GLsizei(indices.count), GLenum(GL_UNSIGNED_BYTE), nil)
         
         glDisableVertexAttribArray(VertexAttributes.position.rawValue)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		408B142023EC07EE005E6F72 /* OpenGLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B141F23EC07EE005E6F72 /* OpenGLView.swift */; };
+		40E2D20223ED68080085381E /* ShaderProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2D20123ED68080085381E /* ShaderProgram.swift */; };
 		4EEF98811C7B7B140050C209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF98801C7B7B140050C209 /* AppDelegate.swift */; };
 		4EEF98831C7B7B140050C209 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF98821C7B7B140050C209 /* ViewController.swift */; };
 		4EEF98861C7B7B140050C209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EEF98841C7B7B140050C209 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		408B141F23EC07EE005E6F72 /* OpenGLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLView.swift; sourceTree = "<group>"; };
+		40E2D20123ED68080085381E /* ShaderProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderProgram.swift; sourceTree = "<group>"; };
 		4EEF987D1C7B7B140050C209 /* HelloOpenGL2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloOpenGL2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEF98801C7B7B140050C209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EEF98821C7B7B140050C209 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				4EEF98871C7B7B140050C209 /* Assets.xcassets */,
 				4EEF98891C7B7B140050C209 /* LaunchScreen.storyboard */,
 				4EEF988C1C7B7B140050C209 /* Info.plist */,
+				40E2D20123ED68080085381E /* ShaderProgram.swift */,
 			);
 			path = HelloOpenGL2;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EEF98831C7B7B140050C209 /* ViewController.swift in Sources */,
+				40E2D20223ED68080085381E /* ShaderProgram.swift in Sources */,
 				408B142023EC07EE005E6F72 /* OpenGLView.swift in Sources */,
 				4EEF98811C7B7B140050C209 /* AppDelegate.swift in Sources */,
 			);
