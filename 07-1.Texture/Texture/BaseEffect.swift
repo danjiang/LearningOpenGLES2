@@ -34,9 +34,9 @@ class BaseEffect {
         glUniformMatrix4fv(self.modelViewMatrixUniform, 1, GLboolean(GL_FALSE), self.modelViewMatrix.array)
         
         // 유니폼 주입
-        glActiveTexture(GLenum(GL_TEXTURE1))
-        glBindTexture(GLenum(GL_TEXTURE_2D), self.texture)
-        glUniform1i(self.textureUniform, 1)
+        glActiveTexture(GLenum(GL_TEXTURE1)) // 激活位置编号 position slot
+        glBindTexture(GLenum(GL_TEXTURE_2D), self.texture) // 绑定 GL_TEXTURE_2D 当前指向的纹理数据到位置编号
+        glUniform1i(self.textureUniform, 1) // 设置位置编号到指定标识
     }
 }
 

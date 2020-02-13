@@ -49,7 +49,7 @@ class ViewController: GLKViewController {
         //Transfomr4: Viewport: Normalized -> Window
         //glViewport(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)
         //이건 GLKit이 자동으로 해준다
-        glClearColor(1.0, 0.0, 0.0, 1.0);
+        glClearColor(0.75, 0.75, 0.75, 1);
         glClear(GLbitfield(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT))
         
         glEnable(GLenum(GL_DEPTH_TEST))
